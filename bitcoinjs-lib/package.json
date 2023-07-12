@@ -1,0 +1,17 @@
+{
+  "name": "bitcoinjs-lib",
+  "version": "3.3.2",
+  "scripts": {
+    "build": "browserify bitcoinjs-lib.js --standalone bitcoinjs > /tmp/bitcoinjs-lib.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bitcoinjs-lib": "3.3.2",
+    "get-random-values": "^2.1.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "uglify-es": "^3.3.9"
+  }
+}
