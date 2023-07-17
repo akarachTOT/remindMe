@@ -8,7 +8,7 @@ function lineNoti(msg) {
         .post("https://notify-api.line.me/api/notify", "message=" + msg, {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
-                Authorization: "Bearer wokji8MOZyXcyRrLBENFSrlyLCsOZh2W8A3UAUqQh9M"
+                Authorization: "Bearer "+process.env.HELLO
             }
         })
         .then(response => {
